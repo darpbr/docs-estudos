@@ -36,3 +36,16 @@ useradd amanda -c "Amanda da Silva Santos" -m -s /bin/bash -p $(openssl passwd s
 useradd rogerio -c "Rogerio da Silva Santos" -m -s /bin/bash -p $(openssl passwd senha) -G GRP_SEC
 
 echo 'Usuarios criados com sucesso! Lembrar de alterar a senha apos o primeiro acesso'
+
+echo 'Ajustando permissões as pastas de arquivos'
+
+chmod 777 /publico
+chmod 770 /adm
+chmod 770 /ven
+chmod 770 /sec
+
+chown root:GRP_ADM /adm
+chown root:GRP_VEN /ven
+chown root:GRP_SEC /sec
+
+echo 'Permissões ajustadas, servidor configurado! Até a próxima!'
