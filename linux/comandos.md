@@ -1,26 +1,4 @@
-<h1 align="center"> Documentos Estudos DARP </h1>
-
-<p align="left">
-<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
-</p>
-
-
-<h2 align="left"> Descrição </h2>
-
-Armazenar algumas dicas e informações a respeito de: Desenvolvimento de Software, DevOps, Linguagens de programação e muitos outros assuntos ligados a **TI**.
-
-### Indice
-
-
-
----
-
-<h2 align="left"> Linux </h2>
-
-**Importante!**: Todos os comandos foram executados utilizando o S.O. Linux Ubuntu 20.04. Caso queira executar em alguma distribuição ou versão diferente os comandos podem sofrer alterações. 
-<<<<<<< HEAD
-=======
-## Comandos
+# Comandos
 
 ### Grupos e Usuários
 * Criando usuários:
@@ -76,27 +54,3 @@ drwxrwxrwx usuario grupo ... ... nome_diretorio
 * * rw- -> Leitura e escrita
 * * r-x -> Leitura e execução
 * * -wx > Escrita e execução
-
-* Trabalhando permissão com números:
-* * R - 4
-* * W - 2
-* * X - 1
-* * Nenhuma - 0
-
-Ou seja, para que um diretório, arquivo possua acesso total por qualquer usuário deverá ser concedida premissão 777 (R+W+X = 4+2+1)onde cada número representa a permissão a: dono, grupo, demais usuários.
-
-Podemos conceder acesso a pasta/arquivo com o seguinte comando:
-```
-chmod 777 /adm/
-```
-ou
-```
-chmod 750 /adm/relatorio.txt
-```
-
-### Alterar dono de um arquivo/diretório
-* Precisamos estar logado como root e rodar o seguinte comando:
-```
-chown new_user:new_group arquivo/diretorio
-```
->>>>>>> 426920d187247807d541cbb197d8fcabca762957
