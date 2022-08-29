@@ -18,3 +18,9 @@ Armazenar algumas dicas e informações a respeito de: Desenvolvimento de Softwa
 <h2 align="left"> Linux </h2>
 
 **Importante!**: Todos os comandos foram executados utilizando o S.O. Linux Ubuntu 20.04. Caso queira executar em alguma distribuição ou versão diferente os comandos podem sofrer alterações.
+
+---
+
+<h2 align="left"> Docker </h2>
+
+**Importante!**: Todos os comandos foram executados utilizando o WSL2 no S.O. Windows 10 Home.
