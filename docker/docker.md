@@ -1,4 +1,8 @@
-# Alguns comandos
+<h4 align="center"> 
+    :construction:  Projeto em construção  :construction:
+</h4>
+
+# Comandos
 
 ## consultas
 ```
@@ -23,6 +27,7 @@ docker run --rm darpbr/nginx-com-vim
 docker exec nginx
 docker exec -it nginx bash
 docker stop nginx
+docker attach nginx
 ```
 
 ## Removendo containers
@@ -36,6 +41,18 @@ docker rm $(docker ps -a -q) -f
 ```
 docker rmi nginx
 docker rmi $(docker ps -a -q) -f
+```
+
+## Networks
+```
+docker network
+docker network ls
+docker network prume
+docker network inspect bridge
+docker network create --driver bridge minharede
+docker run -d -it --name ubuntu1 --network minharede bash
+docker network connect minharede ubuntu3
+docker run --rm -d --name nginx --network host nginx (com este comando é possível conectar ao nginx pelo localhost na porta 80 sem a necessidade do mapeamento de portas)
 ```
 
 ## DockerFile
@@ -52,7 +69,7 @@ Arquivo de configuração do nosso container, é a "receita de bolo", um dos pri
 * CMD ["echo","Hello World"] -> pode ser alterado com parâmetros passados na chamada do método docker run
 ```
 docker run darpbr/hello Diego
-- Diego
+saída no terminal: - Diego
 ```
 
 ## Construindo uma imagem
@@ -70,3 +87,16 @@ docker login
 ```
 docker push darpbr/nginx-diego
 ```
+
+## Network
+
+Tipos:
+* bridge -> Mais utilizado. Quando subimos um container sem setar uma rede, a bridge é a rede padrão que vai subir no container.
+* host -> conecta o container na mesma rede do host;
+* overlay ->
+* macvlan ->
+* none -> Quando queremos subir nosso container sem especificar nenhuma rede.
+
+### Container acessando host
+
+Um container consegue acessar o host quando estiver na rede **host**. Basta acessar o container com o comando docker run ou docker exec, rodar o comando dentro do container: `curl http://host.docker.internal:8000` onde 8000 é o número da porta que está exposta no host.
