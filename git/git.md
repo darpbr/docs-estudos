@@ -90,7 +90,8 @@ git config --global user.signingkey 3AA5C34371567BD2
 
 Após isto é necessário adicionar sua GPG Key ao .bashrc, basta rodar o comando a seguir:
 ```
-[ -f ~/.bashrc ] && echo 'export GPG_TTY=$(tty)' >> ~/.bashrc
+echo 'export GPG_TTY=$(tty)' >> ~/.bashrc
+echo 'export GPG_TTY=$(tty)' >> ~/.profile
 ```
 
 Para assinar commits manualmente devemos rodar o comando: 
