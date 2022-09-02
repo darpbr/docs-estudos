@@ -98,7 +98,7 @@ Para assinar commits manualmente devemos rodar o comando:
 git commit -S -m "mensagem"
 ```
 
-Agora é só commitar o código e rodar o push que já será possível ver a informação de **Verified** nos seus commits.
+Agora é só commitar o código e subir o push que já será possível ver a informação de **Verified** nos seus commits.
 
 ## Semantic Version SemVer
 
