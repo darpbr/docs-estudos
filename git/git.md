@@ -1,7 +1,6 @@
 # Assuntos Relacionados ao Git GitHub
 
 
-
 ## Assinando commits com GPG Key
 
 Consulte [aqui](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification) a página do GitHub sobre **Assinatura de Commits**
@@ -9,6 +8,7 @@ Consulte [aqui](https://docs.github.com/en/authentication/managing-commit-signat
 Passos e comandos para configurar uma chave GPG Key e configurar no GitHub
 <h4 align="rigth">
     :warning: Obs.:
+
 </h4>
 Os comandos a seguir foram rodados no Ubuntu 20.04 assim como no Windows, utilizando para isto o Terminal com WSL 2 e o SO Ubuntu 20.04.
 
