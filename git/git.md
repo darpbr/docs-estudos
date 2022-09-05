@@ -1,7 +1,24 @@
 # Assuntos Relacionados ao Git GitHub
 
+<<<<<<< Updated upstream
 <h4 align="center"> 
     :construction:  Projeto em construção  :construction:
+=======
+## Comandos Git
+
+```
+git config --list
+```
+
+
+## Assinando commits com GPG Key
+
+Consulte [aqui](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification) a página do GitHub sobre **Assinatura de Commits**
+
+Passos e comandos para configurar uma chave GPG Key e configurar no GitHub
+<h4 align="rigth">
+    :warning: Obs.:
+>>>>>>> Stashed changes
 </h4>
 
 ## Semantic Version SemVer
