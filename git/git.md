@@ -1,9 +1,6 @@
 # Assuntos Relacionados ao Git GitHub
 
-<<<<<<< Updated upstream
-<h4 align="center"> 
-    :construction:  Projeto em construção  :construction:
-=======
+
 ## Comandos Git
 
 ```
@@ -18,7 +15,7 @@ Consulte [aqui](https://docs.github.com/en/authentication/managing-commit-signat
 Passos e comandos para configurar uma chave GPG Key e configurar no GitHub
 <h4 align="rigth">
     :warning: Obs.:
->>>>>>> Stashed changes
+    
 </h4>
 
 ## Semantic Version SemVer

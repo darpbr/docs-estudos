@@ -99,4 +99,4 @@ Tipos:
 
 ### Container acessando host
 
-Um container consegue acessar o host quando estiver na rede **host**. Basta acessar o container com o comando docker run ou docker exec, rodar o comando dentro do container: `curl http://host.docker.internal:8000` onde 8000 é o número da porta que está exposta no host.
+Um container consegue acessar o host quando estiver na rede **host**. Basta acessar o container com o comando docker run ou docker exec, rodar o comando dentro do container: `curl http://host.docker.internal:8000` onde 8000 é o número da porta que está exposta no host. 
