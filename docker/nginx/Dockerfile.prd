@@ -1,0 +1,26 @@
+#FROM ubuntu:latest
+FROM nginx:1.15.0-alpine
+
+RUN rm /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/conf.d
+
+RUN mkdir /var/www/html -p && touch /var/www/html/index.php
+
+#ENTRYPOINT ["/docker-entrypoint.sh"]
+
+#CMD ["nginx", "-g", "daemon off;"]
+
+#USER darp
+
+#ENTRYPOINT ["echo", "Hello"]
+
+#CMD ["World"]
+
+#CMD ["echo","Hello World"]
+
+#WORKDIR /app
+
+#RUN apt-get update && \
+#    apt-get install vim -y
+
+#COPY html/ /usr/share/nginx/html
