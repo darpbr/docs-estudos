@@ -1,1 +1,2 @@
-./docker/mysql
+docs-estudos/docker/mysql/*
+./docker/mysql/
